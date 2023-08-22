@@ -1,0 +1,261 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "usermeta": {
+    "deneb": {
+      "build": "1.5.1.0",
+      "metaVersion": 1,
+      "provider": "vegaLite",
+      "providerVersion": "5.6.1"
+    },
+    "interactivity": {
+      "tooltip": true,
+      "contextMenu": true,
+      "selection": true,
+      "highlight": true,
+      "dataPointLimit": 50
+    },
+    "information": {
+      "name": "Matrix with Date and Category",
+      "description": "[No Description Provided]",
+      "author": "Power-BI-guy",
+      "uuid": "095d61a5-b6f6-455f-9bbb-cb4df980d9dc",
+      "generated": "2023-08-22T11:38:56.955Z",
+      "previewImageBase64PNG": "data:image/png;base64,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"
+    },
+    "dataset": [
+      {
+        "key": "__0__",
+        "name": "Category",
+        "description": "Row category",
+        "type": "text",
+        "kind": "column"
+      },
+      {
+        "key": "__1__",
+        "name": "Date",
+        "description": "Column category (eg date)",
+        "type": "dateTime",
+        "kind": "column"
+      },
+      {
+        "key": "__2__",
+        "name": "Actual",
+        "description": "Value 1",
+        "type": "numeric",
+        "kind": "measure"
+      },
+      {
+        "key": "__3__",
+        "name": "Plan",
+        "description": "Value 2",
+        "type": "numeric",
+        "kind": "measure"
+      }
+    ]
+  },
+  "config": {
+    "view": {"stroke": "transparent"},
+    "font": "Segoe UI",
+    "arc": {},
+    "area": {
+      "line": true,
+      "opacity": 0.6
+    },
+    "bar": {},
+    "line": {
+      "strokeWidth": 3,
+      "strokeCap": "round",
+      "strokeJoin": "round"
+    },
+    "path": {},
+    "point": {
+      "filled": true,
+      "size": 75
+    },
+    "rect": {},
+    "shape": {},
+    "symbol": {
+      "strokeWidth": 1.5,
+      "size": 50
+    },
+    "text": {
+      "font": "Segoe UI",
+      "fontSize": 12,
+      "fill": "#605E5C"
+    },
+    "axis": {
+      "ticks": false,
+      "grid": false,
+      "domain": false,
+      "labelColor": "#605E5C",
+      "labelFontSize": 12,
+      "titleFont": "wf_standard-font, helvetica, arial, sans-serif",
+      "titleColor": "#252423",
+      "titleFontSize": 16,
+      "titleFontWeight": "normal"
+    },
+    "axisQuantitative": {
+      "tickCount": 3,
+      "grid": true,
+      "gridColor": "#C8C6C4",
+      "gridDash": [1, 5],
+      "labelFlush": false
+    },
+    "axisBand": {"tickExtra": true},
+    "axisX": {
+      "labelPadding": 20,
+      "orient": "top",
+      "labelAngle": 0
+    },
+    "axisY": {"labelPadding": 10},
+    "header": {
+      "titleFont": "wf_standard-font, helvetica, arial, sans-serif",
+      "titleFontSize": 16,
+      "titleColor": "#252423",
+      "labelFont": "Segoe UI",
+      "labelFontSize": 13.333333333333332,
+      "labelColor": "#605E5C"
+    },
+    "legend": {
+      "titleFont": "Segoe UI",
+      "titleFontWeight": "bold",
+      "titleColor": "#605E5C",
+      "labelFont": "Segoe UI",
+      "labelFontSize": 13.333333333333332,
+      "labelColor": "#605E5C",
+      "symbolType": "circle",
+      "symbolSize": 75
+    }
+  },
+  "width": {"step": 105},
+  "height": {"step": 35},
+  "data": {"name": "dataset"},
+  "transform": [
+    {
+      "fold": ["__2__", "__3__"],
+      "as": ["metrics", "Number"]
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "tooltip": true
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "test": {
+              "field": "__selected__",
+              "equal": "off"
+            },
+            "value": 0.5
+          },
+          "value": 1
+        },
+        "color": {
+          "condition": {
+            "test": {
+              "field": "__selected__",
+              "equal": "on"
+            },
+            "value": "#7b516f"
+          },
+          "value": "#e3e3e3"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "xOffset": -20,
+        "fontSize": 11
+      },
+      "transform": [
+        {
+          "filter": "datum.metrics == '__2__'"
+        }
+      ],
+      "encoding": {
+        "text": {
+          "field": "Number",
+          "format": ",.0f"
+        },
+        "color": {
+          "condition": {
+            "test": {
+              "field": "__selected__",
+              "equal": "on"
+            },
+            "value": "white"
+          },
+          "value": "black"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "xOffset": 20
+      },
+      "transform": [
+        {
+          "filter": "datum.metrics == '__3__'"
+        }
+      ],
+      "encoding": {
+        "text": {
+          "field": "Number",
+          "format": ",.0f"
+        },
+        "color": {
+          "condition": {
+            "test": {
+              "field": "__selected__",
+              "equal": "on"
+            },
+            "value": "white"
+          },
+          "value": "black"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "xOffset": {
+          "expr": "datum.metrics == '__2__' ? -20 : 20"
+        },
+        "yOffset": -25
+      },
+      "encoding": {
+        "text": {"field": "metrics"},
+        "y": {
+          "field": "__0__",
+          "aggregate": "max"
+        }
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "__1__",
+      "scale": {"padding": 0.05},
+      "type": "ordinal",
+      "timeUnit": "yearmonthdate",
+      "title": null,
+      "axis": {"format": "%d.%m.%Y"}
+    },
+    "y": {
+      "field": "__0__",
+      "type": "ordinal",
+      "title": null,
+      "sort": {
+        "field": "__0__",
+        "order": "descending"
+      }
+    }
+  }
+}
